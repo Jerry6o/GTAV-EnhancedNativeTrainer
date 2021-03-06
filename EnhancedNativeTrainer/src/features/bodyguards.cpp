@@ -186,7 +186,7 @@ void do_spawn_bodyguard() {
 
 	requireRefreshOfBodyguardMainMenu = true;
 
-	if (spawnedBodyguards.size() >= 7)
+	if (spawnedBodyguards.size() >= 100)
 	{
 		set_status_text("Cannot spawn any more bodyguards");
 		return;
@@ -225,7 +225,7 @@ void do_spawn_bodyguard() {
 		}
 
 		PED::SET_PED_COMBAT_ABILITY(bodyGuard, 2);
-		PED::SET_PED_COMBAT_RANGE(bodyGuard, 2);
+		PED::SET_PED_COMBAT_RANGE(bodyGuard, 4);
 
 
 		// throw every weapon at the bodyguards
